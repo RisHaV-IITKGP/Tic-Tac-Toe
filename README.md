@@ -11,7 +11,8 @@ If not then , then this is the place to do so.
 
 Currently the code uses a very naive logic to make moves. This can be optimised to a large extent to improve the win percentage.
 Bugs , if found can be fixed .
+
 **How to play the Game**
-1. Download and Install any python compiler 
-2. Run the main.py file after compiling 
-3. Follow the Instructions and Play 
+1. Download and Install any python compiler.
+2. Run the main.py file after compiling.
+3. Follow the Instructions and Play.
