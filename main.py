@@ -2,6 +2,7 @@
 # This a Basic simulation of the game Tic-Tac-Toe
 
 import time
+import random
 
 # First ask the user if he/she wants to make the first move
 while True :
@@ -102,6 +103,20 @@ def check_GameOver() :
     return False
 
 
+# Function to make a move in the Game
+def make_move() :
+    # Keep Trying till you are able to make a move
+    while True :
+
+        x = random.randint(0,2)
+        y = random.randint(0,2)
+
+        if grid[x][y] == '.' :
+            grid[x][y] = 'O'
+            break
+
+
+
 # Now simulate the game
 while True :
 
@@ -136,17 +151,10 @@ while True :
     else :
         print("My Turn : \n")
 
-        time.sleep(3)
+        time.sleep(1)
 
-        flag = False
-        for x in range(0,3) :
-            for y in range(0,3) :
-                if grid[x][y] == '.' :
-                    grid[x][y] = 'O'
-                    flag = True
-                    break
-            if flag :
-                break
+        # Function to make a move in the Game
+        make_move()
 
         choice = 'Y'
 
